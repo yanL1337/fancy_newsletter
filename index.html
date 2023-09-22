@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <!-- Sign-up form start -->
+    <div id="hider">
+      <div class="wrapperContent">
+        <form onsubmit="validate(); return false">
+          <h1>Stay updated!</h1>
+          <h2>Join 60,000+ product managers receiving monthly updates on:</h2>
+          <div class="checkedContent">
+            <p>Product discovery and building what matters</p>
+            <p>Measuring to ensure updates are a success</p>
+            <p>And much more!</p>
+          </div>
+
+          <div class="labels">
+            <label for="email">Email address</label>
+            <label class="hidden" id="notValid">Valid email required*</label>
+          </div>
+          <input type="text" id="email" placeholder="email@company.com" />
+          <button type="submit">Subscribe to monthly newsletter</button>
+        </form>
+
+        <div class="mainImg"></div>
+      </div>
+    </div>
+
+    <!-- Sign-up form end -->
+
+    <!-- Success message start -->
+    <div id="unhide" class="hidden">
+      <div class="secondWrapper">
+        <form action="#">
+          <img src="./assets/images/icon-success.svg" alt="" />
+          <h2>
+            Thanks for <br />
+            subscribing!
+          </h2>
+          <p>
+            A confirmation email has been sent to <br />
+            <span id="emailName"></span>. Please open it and click <br />
+            the button inside to confirm your subscription.
+          </p>
+          <button type="submit">Dismiss Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Success message end -->
+
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

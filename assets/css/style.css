@@ -1,0 +1,190 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: RobotoRegular;
+  src: url("../fonts/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: RobotoBold;
+  src: url("../fonts/Roboto-Bold.ttf");
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.wrapperStyle, body .secondWrapper, body .wrapperContent {
+  margin: 0 auto;
+  width: fit-content;
+  border-radius: 30px;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.h2Style, body .secondWrapper h2, body .wrapperContent form h2 {
+  font-family: RobotoRegular;
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 5vh;
+}
+
+.pStyling, body .secondWrapper p, body .wrapperContent form .labels label, body .wrapperContent form p {
+  font-size: 1.6rem;
+  color: hsl(234, 29%, 20%);
+}
+
+.buttonStyle, body .secondWrapper button, body .wrapperContent form button {
+  width: 100%;
+  height: 7vh;
+  background-color: hsl(234, 29%, 20%);
+  color: hsl(0, 0%, 100%);
+  font-family: RobotoRegular;
+  font-size: 1.7rem;
+  border-radius: 7px;
+  border-color: hsl(234, 29%, 20%);
+}
+
+.hidden {
+  display: none;
+}
+
+.warnung {
+  background-color: hsla(4, 100%, 67%, 0.351);
+  border-color: hsl(4, 100%, 67%);
+  color: hsl(4, 100%, 67%);
+}
+
+html {
+  font-family: RobotoRegular;
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsl(235, 18%, 26%);
+  padding: 10vh;
+}
+body .wrapperContent {
+  padding: 20px 20px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 75vh;
+}
+body .wrapperContent form {
+  padding: 30px 60px 0 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+body .wrapperContent form h1 {
+  font-size: 8rem;
+  font-family: RobotoBold;
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 2vh;
+}
+body .wrapperContent form h2 {
+  font-size: 2rem;
+}
+body .wrapperContent form p {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 2vh;
+}
+body .wrapperContent form p::before {
+  content: url("../images/icon-list.svg");
+  position: absolute;
+  left: 0;
+  top: -2px;
+}
+body .wrapperContent form p:last-of-type {
+  margin-bottom: 5vh;
+}
+body .wrapperContent form .labels {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+}
+body .wrapperContent form .labels label {
+  font-family: RobotoBold;
+  margin-bottom: 1vh;
+}
+body .wrapperContent form .labels label:nth-of-type(2) {
+  text-align: right;
+  color: hsl(4, 100%, 67%);
+}
+body .wrapperContent form input {
+  border-radius: 7px;
+  width: 100%;
+  height: 7vh;
+  margin-bottom: 3vh;
+  padding-left: 3vw;
+  font-size: 1.7rem;
+}
+body .wrapperContent form input::placeholder {
+  color: hsl(231, 7%, 60%);
+  font-family: RobotoRegular;
+}
+body .wrapperContent .mainImg {
+  background: url("../images/illustration-sign-up-desktop.svg") no-repeat center;
+  background-size: cover;
+  border-radius: 30px;
+}
+body .secondWrapper {
+  padding: 20px 40px;
+}
+body .secondWrapper img {
+  margin-bottom: 2vh;
+}
+body .secondWrapper h2 {
+  font-size: 3rem;
+  font-family: RobotoBold;
+  color: hsl(234, 29%, 20%);
+  margin-bottom: 4vh;
+}
+body .secondWrapper p {
+  margin-bottom: 6vh;
+}
+body .secondWrapper p span {
+  font-family: RobotoBold;
+}
+@media only screen and (max-width: 415px) {
+  body {
+    background-color: hsl(0, 0%, 100%);
+    padding: 0;
+  }
+  body .wrapperContent {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  body .wrapperContent form {
+    padding: 10px 10px;
+    grid-row: 2/3;
+  }
+  body .wrapperContent form h1 {
+    font-size: 5rem;
+  }
+  body .wrapperContent form h2 {
+    width: 300px;
+  }
+  body .wrapperContent form p {
+    width: auto;
+  }
+  body .wrapperContent .mainImg {
+    background: url("../images/illustration-sign-up-mobile.svg") no-repeat center;
+    background-size: cover;
+    border-radius: 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    margin-bottom: 5vh;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
